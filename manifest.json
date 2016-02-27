@@ -1,7 +1,7 @@
 {
   "name":"SUPER HOT",
   "description":"OVER LAYS SUPERHOT AND PLAYS SONG",
-  "version":"1.2",
+  "version":"1.3",
   "manifest_version":2,
   "background": {
     "scripts": ["bg.js"]
@@ -12,6 +12,10 @@
   "web_accessible_resources": [
     "assets/*"
   ],
+  "icons": {
+    "48": "assets/app-icon/48.png",
+    "128": "assets/app-icon/128.png"
+  },
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
