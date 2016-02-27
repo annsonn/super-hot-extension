@@ -5,8 +5,8 @@ var showOverlay = function(){
     isOverlayVisible = true;
     var overlay = document.createElement('div');
     overlay.id = "SUPERHOT-OVERLAY";
-    overlay.className = 'overlay';
-    overlay.innerHTML= "<div class=\'text\'><strong>SUPER</strong>HOT</div>";
+    overlay.className = 'super-hot-overlay';
+    overlay.innerHTML= "<div class=\'super-hot-text\'><strong>SUPER</strong>HOT</div>";
 
     document.body.appendChild(overlay);
     setTimeout(removeOverlay, 20000);
