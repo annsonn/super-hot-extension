@@ -1,0 +1,25 @@
+{
+  "name":"SUPER HOT",
+  "description":"OVER LAYS SUPERHOT AND PLAYS SONG",
+  "version":"1.0",
+  "manifest_version":2,
+  "background": {
+    "scripts": ["bg.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "web_accessible_resources": [
+    "assets/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["content.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ]
+}
